@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/catalogo.js" async></script>
+    <title>Floricultura Haag - Catálogo</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="" alt="Logo Floricultura Haag">
+            <h1>Floricultura Haag - Flores de Cetim</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="inicio.html">Início</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Catálogo</h2>
+
+        <div id="pesquisa">
+            <label for="pesquisa-input">Nome do produto</label>
+            <br>
+            <input type="text" id="pesquisa-input" placeholder="Digite o nome da flor ou buquê">
+            <button onclick="pesquisarProdutos()">Pesquisar</button>
+        </div>
+
+        <div class="filtros">
+            <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+            <button class="filtro-btn" data-filtro="flores-sortidas">Flores Sortidas</button>
+            <button class="filtro-btn" data-filtro="buques">Buquês</button>
+        </div>
+
+        <section class="catalogo" id="catalogo">
+            <div class="produto" data-categoria="flores-sortidas">
+                <img src="/api/placeholder/250/250" alt="Orquídea">
+                <h3>Orquídea Branca</h3>
+                <p>Orquídea delicada e refinada</p>
+                <p class="preco">R$ 89,99</p>
+            </div>
+            <div class="produto" data-categoria="buques">
+                <img src="/api/placeholder/250/250" alt="Buquê de Rosas">
+                <h3>Buquê de Rosas</h3>
+                <p>Rosas vermelhas em um buquê elegante</p>
+                <p class="preco">R$ 129,99</p>
+            </div>
+            <div class="produto" data-categoria="flores-sortidas">
+                <img src="/api/placeholder/250/250" alt="Girassol">
+                <h3>Girassol</h3>
+                <p>Girassol alegre e vibrante</p>
+                <p class="preco">R$ 59,99</p>
+            </div>
+            <div class="produto" data-categoria="buques">
+                <img src="/api/placeholder/250/250" alt="Lírios">
+                <h3>Buquê de Lírios</h3>
+                <p>Arranjo de lírios brancos e rosa</p>
+                <p class="preco">R$ 99,99</p>
+            </div>
+            <div class="produto" data-categoria="flores-sortidas">
+                <img src="/api/placeholder/250/250" alt="Tulipa">
+                <h3>Tulipa</h3>
+                <p>Tulipas coloridas e delicadas</p>
+                <p class="preco">R$ 69,99</p>
+            </div>
+            <div class="produto" data-categoria="buques">
+                <img src="/api/placeholder/250/250" alt="Buquê Misto">
+                <h3>Buquê Misto</h3>
+                <p>Variedade de flores em um único buquê</p>
+                <p class="preco">R$ 149,99</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Floricultura Haag - Todos os direitos reservados</p>
+        <p>Contato: (11) 9999-9999 | aline@exemplo.com.br</p>
+    </footer>
+</body>
+</html>
